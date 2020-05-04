@@ -11,7 +11,7 @@ function youtubeParser(url) {
 }
 
 /* eslint-disable max-len */
-const vimeoRegex = /https?:\/\/(?:www\.|player\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/([^/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?)/;
+const vimeoRegex = /(?:http:|https:)?\/\/(?:www\.|player\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/([^/]*)\/videos\/|album\/(\d+)\/video\/|video\/|)(\d+)/;
 /* eslint-enable max-len */
 function vimeoParser(url) {
   const match = url.match(vimeoRegex);
